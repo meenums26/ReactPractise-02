@@ -9,9 +9,17 @@
     <body>
         <div id="root"></div>
         <script type="text/javascript">
-            let heading = React.createElement('h1',null,"Getting started with React Js")
+            let list = React.createElement('ul',{style:{color:"green"}},
+            React.createElement('li',null,"Sunday"),
+            React.createElement('li',null,"Monday"),
+            React.createElement('li',null,"Tuesday"),
+            React.createElement('li',null,"Wednesday"),
+            React.createElement('li',null,"Thursday"),
+            React.createElement('li',null,"Friday"),
+            React.createElement('li',null,"Saturday")
+            )
             ReactDOM.render(
-                heading,
+                list,
                 document.getElementById("root")
 
             )
